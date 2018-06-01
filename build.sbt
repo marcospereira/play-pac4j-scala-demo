@@ -11,7 +11,6 @@ val pac4jVersion = "3.0.0-RC3-SNAPSHOT"
 val playVersion = "2.6.15"
 
 libraryDependencies ++= Seq(
-  guice,
   ehcache, // or cacheApi
   ws,
   filters,

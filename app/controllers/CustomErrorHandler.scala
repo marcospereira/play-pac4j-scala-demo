@@ -20,7 +20,7 @@ class CustomErrorHandler extends HttpErrorHandler {
 
   def onServerError(request: RequestHeader, exception: Throwable) = {
     Future.successful {
-      log.error("Error occurrred", exception)
+      log.error("A server error occurred", exception)
       InternalServerError(views.html.error500())
     }
   }
