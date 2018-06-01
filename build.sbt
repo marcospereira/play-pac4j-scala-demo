@@ -31,7 +31,8 @@ libraryDependencies ++= Seq(
   "org.pac4j" % "pac4j-kerberos" % pac4jVersion,
   "org.pac4j" % "pac4j-couch" % pac4jVersion,
   "com.typesafe.play" % "play-cache_2.12" % playVersion,
-  "commons-io" % "commons-io" % "2.5"
+  "commons-io" % "commons-io" % "2.5",
+  "com.softwaremill.macwire" %% "macros" % "2.3.1" % "provided"
 )
 
 resolvers ++= Seq(Resolver.mavenLocal, "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases", "Sonatype snapshots repository" at "https://oss.sonatype.org/content/repositories/snapshots/", "Shibboleth releases" at "https://build.shibboleth.net/nexus/content/repositories/releases/")
