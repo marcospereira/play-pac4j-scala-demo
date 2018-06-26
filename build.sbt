@@ -4,15 +4,15 @@ version := "6.0.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.12.2"
+scalaVersion := "2.12.6"
 
 val playPac4jVersion = "6.0.0"
-val pac4jVersion = "3.0.0"
-val playVersion = "2.6.6"
+val pac4jVersion = "3.0.1"
+val playVersion = "2.6.15"
 
 libraryDependencies ++= Seq(
   guice,
-  ehcache, // or cacheApi
+  ehcache,
   ws,
   filters,
   specs2 % Test,
@@ -30,8 +30,8 @@ libraryDependencies ++= Seq(
   "org.pac4j" % "pac4j-mongo" % pac4jVersion,
   "org.pac4j" % "pac4j-kerberos" % pac4jVersion,
   "org.pac4j" % "pac4j-couch" % pac4jVersion,
-  "com.typesafe.play" % "play-cache_2.12" % playVersion,
-  "commons-io" % "commons-io" % "2.5"
+  "commons-io" % "commons-io" % "2.6",
+  "com.softwaremill.macwire" %% "macros" % "2.3.1"
 )
 
 resolvers ++= Seq(Resolver.mavenLocal, "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases", "Sonatype snapshots repository" at "https://oss.sonatype.org/content/repositories/snapshots/", "Shibboleth releases" at "https://build.shibboleth.net/nexus/content/repositories/releases/")
