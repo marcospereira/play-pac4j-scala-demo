@@ -18,3 +18,10 @@ To test, you can call a protected url by clicking on the "Protected url by **xxx
 ## Live demo
 
 Find a live demo on Heroku: [http://play-pac4j-scala-demo.herokuapp.com](http://play-pac4j-scala-demo.herokuapp.com/)
+
+## walk-through
+
+1. Start with Pac4JSecurityComponents and comments there
+2. See CallbackController and then LogoutController and CentralLogoutController
+3. See MacwireApplicationLoader
+4. See application.conf
